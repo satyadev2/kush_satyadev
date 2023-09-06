@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .header {
+            background-color: r;
+        }
+
+        body {
+            background-color: #1f1f1f;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height:10em" class="header">
+        <ul type="none" id="navbar">
+            <li><img src="yy2.png"></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.html">PROJECTS</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="https://drive.google.com/file/d/1gez_tFsRu9k8Qa7Z1Y_j6Q14H-XPvuBt/view?usp=sharing">RESUME</a>
+            </li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2 style="padding: 0">Feedback</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="fname">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="lname">EMail:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="suggestion">Suggestion:</label>
+                <textarea id="suggestion" name="suggestion" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
